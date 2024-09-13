@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assests/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+</head>
+<body>
+
+
+    <!--Navigation bar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- About Us Section -->
+    <div class="container-fluid mt-5 pt-4" style="margin-top: 80px;margin-bottom: 10px;">
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="row mb-4 mt-3">
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="about-image">
+                                <img src="../assests/images/coffeeshopimage.jpg" alt="Coffee Shop Image">
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content"></div>
+                            <div class="about-text">
+                                <h2>About Us</h2>
+                                <p>Welcome to Moka Coffee Shop, where we bring you the finest coffee experience in town. Our passion for coffee started 2020 years ago with a simple mission: to create a cozy space where people can relax and enjoy high-quality coffee crafted with love and care.</p>
+                                <div class="timeline">
+                                    <h3>Our Journey</h3>
+                                    <ul>
+                                      <li>
+                                        <div class="event">
+                                          <h4>2020 - Started with a Dream</h4>
+                                          <p>Our journey began with a dream of creating the perfect cup of coffee. We started small but with big dreams.</p>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="event">
+                                          <h4>2022- First Store Opening</h4>
+                                          <p>We opened our first coffee shop in the heart of the city. The response was incredible, and we knew we were on the right path.</p>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="event">
+                                          <h4>2024 - Expansion and Growth</h4>
+                                          <p>With our growing popularity, we expanded to multiple locations, each one reflecting our commitment to quality and customer satisfaction.</p>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>      
+    </div>
+      
+
+    <!--footer-->
+    <div id="footer-placeholder"></div>
+
+
+    <script>
+        fetch('../component/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <script>
+        fetch('../component/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <script src="../assests/js/script.js"></script>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

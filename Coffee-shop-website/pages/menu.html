@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assests/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+</head>
+<body>
+
+    <!--Navigation bar -->
+    <!--Navigation bar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Page Content -->
+    <div class="container-fluid mt-5 pt-4" style="margin-top: 80px;margin-bottom: 10px;">   
+        <section id="menu">
+        
+            <h2>Our Menu</h2>
+          
+            <!-- Filter buttons -->
+             <div class="menu-filters">
+              <button class="filter-btn " data-filter="all">All</button>
+              <button class="filter-btn active" data-filter="coffee">Coffee</button>
+              <button class="filter-btn" data-filter="tea">Tea</button>
+              <button class="filter-btn" data-filter="pastries">Pastries</button>
+            </div> 
+          
+            <!-- Menu categories -->
+            <div class="menu-category coffee show">
+              <h3>Coffee</h3>
+              <ul>
+                <li>
+                  <div class="menu-item">
+                    <img src="../assests/images/espresso.jpg" alt="Espresso">
+                    <div class="menu-info">
+                      <span class="item-name">Espresso</span>
+                      <span class="item-price">$2.50</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="menu-item">
+                    <img src="../assests/images/cappuccino.jpg" alt="Cappuccino">
+                    <div class="menu-info">
+                      <span class="item-name">Cappuccino</span>
+                      <span class="item-price">$3.50</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div> 
+          
+            <div class="menu-category tea show">
+              <h3>Tea</h3>
+              <ul>
+                <li>
+                  <div class="menu-item">
+                    <img src="../assests/images/greentea.jpg" alt="Green Tea">
+                    <div class="menu-info">
+                      <span class="item-name">Green Tea</span>
+                      <span class="item-price">$2.00</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="menu-item">
+                    <img src="../assests/images/chailatte.jpg" alt="Chai Latte">
+                    <div class="menu-info">
+                      <span class="item-name">Chai Latte</span>
+                      <span class="item-price">$3.00</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          
+            <div class="menu-category pastries show">
+              <h3>Pastries</h3>
+              <ul>
+                <li>
+                  <div class="menu-item">
+                    <img src="../assests/images/croissant.jpg" alt="Croissant">
+                    <div class="menu-info">
+                      <span class="item-name">Croissant</span>
+                      <span class="item-price">$2.00</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="menu-item">
+                    <img src="../assests/images/muffin.jpg" alt="Muffin">
+                    <div class="menu-info">
+                      <span class="item-name">Muffin</span>
+                      <span class="item-price">$3.00</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+    </div>
+    
+    <!--footer-->
+    <div id="footer-placeholder"></div>
+
+    <script src="../assests/js/script.js"></script>
+
+    <script>
+        fetch('../component/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <script>
+        fetch('../component/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+
+
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+    
+
+</body>
+</html>
